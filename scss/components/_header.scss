@@ -1,0 +1,30 @@
+@import '../extensions/mixins';
+@import '../base/color';
+@import '../base/fonts';
+
+.nav-link {
+    font-family: $fuente;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.navJenny {
+    background-image: linear-gradient(to bottom, $color-normal, $color-strong);
+}
+
+nav div img {
+    width: 6%;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .Inicio {
+        padding-top: 2%;   
+}
+}
+
+@media only screen and (min-width: 768px) {
+    .Inicio {
+        padding-top: auto;
+}
+}

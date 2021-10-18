@@ -1,0 +1,13 @@
+@import 'extensions/mixins';
+@import 'extensions/extend';
+@import 'base/color'; 
+@import 'base/fonts';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

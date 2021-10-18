@@ -1,0 +1,232 @@
+h1 {
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.titleLight {
+  color: white;
+}
+
+.titleStrong {
+  color: #000000;
+}
+
+h3 {
+  font-family: "Urbanist", sans-serif;
+  color: #696969;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  h4 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h4 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h5 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h5 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
+.accordion-button {
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+h6 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.titleLight {
+  color: white;
+}
+
+.titleStrong {
+  color: #000000;
+}
+
+h3 {
+  font-family: "Urbanist", sans-serif;
+  color: #696969;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  h4 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h4 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h5 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h5 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
+.accordion-button {
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+h6 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.navJenny {
+  background-image: linear-gradient(to bottom, #696969, #000000);
+}
+
+nav div img {
+  width: 6%;
+}
+
+@media only screen and (max-width: 767px) {
+  .Inicio {
+    padding-top: 2%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Inicio {
+    padding-top: auto;
+  }
+}
+.footer {
+  /* SOLO FONDO */
+  padding: 5%;
+  background-color: white;
+  background-image: url(../media/Cielo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.herobox {
+  padding: 5%;
+}
+
+.herolarge {
+  padding-top: 12%;
+}
+
+footer .footer-bg {
+  background-color: rgba(5, 5, 5, 0.5);
+  border: 0px solid white;
+  width: 80%;
+  margin: 45px 0;
+  padding: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .footer-bg {
+    background-color: rgba(5, 5, 5, 0.5);
+    border: 0px solid white;
+    width: 80%;
+    margin: 45px 0;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .footer-bg {
+    background-color: rgba(5, 5, 5, 0.5);
+    border: 0px solid white;
+    width: 80%;
+    margin: 45px 0;
+    padding: 20px;
+  }
+}
+.profilepic {
+  text-align: center;
+  height: fit-content;
+  width: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

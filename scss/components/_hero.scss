@@ -1,0 +1,51 @@
+.footer { /* SOLO FONDO */
+    padding: 5%;
+    background-color: $blanco;
+    background-image: url(../media/Cielo.jpg);
+    background-attachment: fixed;
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.herobox {
+    padding: 5%;
+}
+
+.herolarge {
+    padding-top: 12%;
+}
+
+footer .footer-bg {    
+    background-color: rgba(5, 5, 5, 0.5);
+    border: 0px solid $blanco;    
+    width: 80%;
+    margin: 45px 0;
+    padding: 50px;     
+}
+
+@media only screen and (min-width: 768px) {    
+    footer .footer-bg {    
+        background-color: rgba(5, 5, 5, 0.5);
+        border: 0px solid $blanco;    
+        width: 80%;
+        margin: 45px 0;
+        padding: 50px;     
+    }
+}
+
+@media only screen and (max-width: 767px) {  
+    footer .footer-bg {    
+        background-color: rgba(5, 5, 5, 0.5);
+        border: 0px solid $blanco;    
+        width: 80%;
+        margin: 45px 0;
+        padding: 20px;     
+    }
+}
+
+.profilepic {
+    text-align: center;
+    height: fit-content;    
+    width: 50% ;
+}
