@@ -1,0 +1,25 @@
+@import '../extensions/mixins';
+@import '../base/color';
+@import '../base/fonts';
+
+
+
+
+@media only screen and (max-width: 767px) {  
+    .videoreel {
+        padding-top: 50%;
+        padding-bottom: 50%;
+        background-image: linear-gradient(to bottom, $color-normal, $color-strong);              
+    }
+}
+
+
+@media only screen and (min-width: 767px) {  
+    .videoreel {
+        background-image: linear-gradient(to bottom, $color-normal, $color-strong);              
+    }
+}
+
+
+
+

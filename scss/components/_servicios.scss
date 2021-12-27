@@ -1,0 +1,25 @@
+@import '../extensions/mixins';
+@import '../base/color';
+@import '../base/fonts';
+
+
+.servicios {
+    background-image: linear-gradient(to bottom, white, $color-strong);
+}
+
+.card {
+    border-radius: 0%;
+}
+
+
+#gris {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;    
+}
+
+#gris:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all .6s ease;
+}

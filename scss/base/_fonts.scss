@@ -89,7 +89,10 @@ h3 {
 
 h6 {    
     font-family: $fuente;
-    font-weight: $negrita;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: $color-normalless;    
 }
 
 

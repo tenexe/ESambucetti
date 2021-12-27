@@ -1,3 +1,7 @@
+@import '../extensions/mixins';
+@import '../base/color';
+@import '../base/fonts';
+
 .footer { /* SOLO FONDO */
     padding: 5%;
     background-color: $blanco;
