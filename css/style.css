@@ -256,6 +256,28 @@ h6 {
   color: #888888;
 }
 
+.truefooter {
+  background-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .foottext {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #888888;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foottext {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: #888888;
+  }
+}
 h1 {
   font-family: "Urbanist", sans-serif;
   letter-spacing: 5px;
@@ -573,6 +595,14 @@ h6 {
     background-image: linear-gradient(to bottom, #696969, #000000);
   }
 }
+.bg-produ-dark {
+  background-color: #1f1f1f;
+}
+
+.videoprodu {
+  background-image: linear-gradient(to bottom, #696969, #000000);
+}
+
 * {
   margin: 0;
   padding: 0;

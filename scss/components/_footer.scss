@@ -1,3 +1,27 @@
 @import '../extensions/mixins';
 @import '../base/color';
 @import '../base/fonts';
+
+.truefooter {
+    background-color: black;
+}
+
+@media only screen and (min-width: 768px) {    
+    .foottext {    
+        font-family: $fuente;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: $color-normalless;    
+    }
+}
+
+@media only screen and (max-width: 767px) {  
+    .foottext {    
+        font-family: $fuente;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 10px;
+        color: $color-normalless;    
+    }
+}

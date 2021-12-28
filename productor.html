@@ -38,13 +38,10 @@
 
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-4 navbar-dark navJenny d-none d-md-none d-lg-block">
+    <nav class="navbar navbar-light bg-light fixed-top py-4 navbar-dark navJenny ">
         <div class="container">
-            <img src="media/Logo.png" alt="Logo" class="Logo ms-5">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <img src="media/Logo.png" alt="Logo" class="Logo ms-5" style="height: 5vh; width: 8vh;">
+            <div>
                 <ul class="navbar-nav ms-auto mb-1 mb-lg-0 justify-content-end Inicio">
                     <li class="nav-item fw-bold fs-2 px-2 pe-4" style="font-family: 'Urbanist', sans-serif">
                         <a class="nav-link" href="index.html"><h2>Home</h2></a>
@@ -54,10 +51,58 @@
         </div>
     </nav>
 
-<div class="videoreel">
-    <div class="pt-5 ratio ratio-16x9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xjsBVKIA9ZM?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
+
+    <section class="reel" id="reel">
+        <div>
+            <video autoplay loop muted class="ratio d-none d-lg-block" style="--aspect-ratio: 31,25%;">
+                    <source src="media/PRODUBOX.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted class="ratio d-lg-none pt-5" style="--aspect-ratio: 31,25%;">
+                <source src="media/PRODUBOX-mob.mp4" type="video/mp4">
+            </video>        
+        </div>
+    </section>
+    
+    <section id="videoprodu" class="videoprodu">
+        <div class="container bg-produ-dark">
+
+            <div class="container py-5">                
+                <div class="container align-items-center text-center px-5">
+                    <p class="container lh-base"> <h5 style="color: white;"> "Me encantó hacer este trabajo así que se los comparto: BOX Synergy quería lanzar su producto en USA y confió en nosotros para desarrollar videos de alto impacto. Uno debía resaltar las cualidades del producto; el otro, acercárselo al target del mismo: aventureros todoterreno, amantes de la naturaleza. En mi rol de productor (además de editor) coordiné el rodaje con una productora en Córdoba de acuerdo a las necesidades de postproducción y, en simultáneo, trabajé con un compositor de VFX y un diseñador 3D. El resultado es este par de videos: Experiencia y Producto."</h5></p>
+                </div>                                
+            </div>
+    
+         
+            <div class="container pb-4">    
+                <div class="card-group">
+                    <div class="card">
+                        <div class="d-flex justify-content-center">                    
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cA0AV27Wqmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                            <div class="card-header">
+                            <h2 class="text-center">BOX Synergy PRODUCTO</h2>
+                        </div>
+                            <div class="card-body">              
+                                <p class="card-text"><h6 class="text-center">Desarrollamos los modelos 3D de los productos y posteriormente los animamos para producir un animatic para el feedback del Cliente. Luego vino la composición y los VFX, el montaje y la incorporación de sonidos.</h6></p>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="d-flex justify-content-center">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/q5Um3jJURMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                            <div class="card-header">
+                            <h2 class="text-center">BOX Synergy EXPERIENCIA</h2>
+                        </div>
+                            <div class="card-body">      
+                                <p class="card-text"><h6 class="text-center">En este video combinamos motion graphics, 3D, tracking y un montaje rítmico y potente con footage filmado en la provincia de Córdoba para dar cuenta de la 'experiencia' de utilizar el producto.</h6></p>
+                            </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="d-flex justify-content-evenly truefooter py-1 "><h6 class="foottext">Desarrollo Web por Exequiel Sambucetti ©</h6></div>
 
 </body>
