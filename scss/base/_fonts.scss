@@ -16,6 +16,25 @@ h2 {
     letter-spacing: 3px;
 }
 
+.wholink {
+    color: $color-strong;
+    text-decoration: none;
+    font-weight: 400;    
+}
+
+
+.wholink:link, .wholink:visited,  .wholink:hover, .wholink:active
+{
+    color: $color-strong;
+    text-decoration: none;
+    font-weight: 400; 
+}
+
+
+
+
+
+
 .titleLight {
     color: $blanco;
 }
