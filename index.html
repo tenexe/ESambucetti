@@ -66,33 +66,39 @@
 </nav>
 
 <!-- HERO VIDEO -->
-<section id="inicio" class="Inicio">
-    <div class="ratio ratio-21x9">
-        <video src="media/hero.mp4" autoplay muted loop playsinline></video>
-    </div>
-</section>
+        <section class="reel" id="reel">
+            <div>
+                <video autoplay loop muted class="ratio d-none d-lg-block" style="--aspect-ratio: 31,25%;">
+                        <source src="media/ultralow_main_vid.mp4" type="video/mp4">
+                </video>
+                <video autoplay loop muted class="ratio d-lg-none" style="--aspect-ratio: 31,25%;">
+                    <source src="media/ultralow_main_vid.mp4" type="video/mp4">
+                </video>        
+            </div>
+        </section>
 
 <!-- BIO INTERMEDIA -->
-<section id="bio" class="herobox container py-5">
-    <div class="row align-items-center">
-        <div class="col-md-7">
-            <h2 class="titleStrong mb-3">Exequiel Sambucetti</h2>
-            <h5 class="mb-4">
-                Soy Director Cinematográfico formado en la Universidad del Cine, con un recorrido que combina cine autoral, agencia y producción comercial. En 2015 mi corto Homúnculo —ganador del Concurso Historias Breves del INCAA— se estrenó en salas y recorrió festivales de Latinoamérica y Europa.
-            </h5>
-            <h5 class="mb-3">
-                Hoy trabajo como Director, Productor y Editor. Vengo del cine, pasé por agencia y me muevo con comodidad entre lo creativo y lo operativo. Me especializo en proyectos que exigen versatilidad: adapto mirada, lenguaje y procesos según cada objetivo, articulando equipos creativos y técnicos para convertir ideas complejas en piezas claras, viables y bien ejecutadas.
-            </h5>          
-            <a class="wholink" href="about.html">
-                <h3>Para saber más sobre mí, tocá acá</h3>
-            </a>
+  <section id="who" class="who">
+        <div class="container d-none d-md-none d-lg-block"> <!--a partir de lg-->
+            <div class="row container">
+                <div class="col align-items-center d-flex text-center">
+                    <p class="container lh-base py-5"> <h5>Soy Director, egresado de la Universidad del Cine en 2011. Hice cursos de Guion con Juan José Campanella, Aída Bortnik y Fernando Castets, Producción de TV con Pablo Culell, Producción y Negocios Audiovisuales con Alejandro Cacetta y más. <br> Gané el concurso del INCAA "Historias Breves" y estrené en 2015 Homúnculo en cines. Siempre buscando hacer y saber un poco más, soy también Editor y Productor freelance.</h5></p>
+                </div>
+                <div class="col">
+                  <img src="media/03a.jpg" class="img-fluid float-end" alt="Exequiel">
+                </div>                
+              </div>
         </div>
+        <div class="container d-lg-none"> <!--hasta lg-->
+            <div class="container py-5">
+                <img src="media/3b.png" class="mx-auto d-block profilepic pb-3" alt="Exequiel">
+                <div class="align-items-center text-center">
+                    <p class="container lh-base"> <h5>Soy Director, egresado de la Universidad del Cine en 2011. Hice cursos de Guion con Juan José Campanella, Aída Bortnik y Fernando Castets, Producción de TV con Pablo Culell, Producción y Negocios Audiovisuales con Alejandro Cacetta y más. Gané el concurso del INCAA "Historias Breves" y estrené en 2015 Homúnculo en cines. Siempre buscando hacer y saber un poco más, soy también Editor y Productor freelance.</h5></p>
+                </div>                                
+              </div>
+        </div> 
+    </section>
 
-        <div class="col-md-5 text-center">
-            <img src="media/profile.png" class="img-fluid profilepic" alt="Exequiel Sambucetti">
-        </div>
-    </div>
-</section>
 
 <!-- REEL -->
 <section id="reel" class="videoreel">
