@@ -28,31 +28,26 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 navJenny">
   <div class="container-fluid px-4">
 
-    <!-- HEADER MOBILE -->
-    <div class="d-flex w-100 align-items-center justify-content-between">
+    <!-- LOGO -->
+    <a class="navbar-brand m-0" href="#hero">
+      <img
+        src="media/Logo.png"
+        alt="Logo"
+        style="height:44px; width:auto;"
+      >
+    </a>
 
-      <!-- LOGO -->
-      <a class="navbar-brand m-0" href="#hero">
-        <img 
-          src="media/Logo.png"
-          alt="Logo"
-          style="height:44px; width:auto;"
-        >
-      </a>
-
-      <!-- HAMBURGUESA -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarMain"
-        aria-controls="navbarMain"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-    </div>
+    <!-- HAMBURGUESA (solo mobile) -->
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMain"
+      aria-controls="navbarMain"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <!-- MENÚ -->
     <div class="collapse navbar-collapse fade mt-3 mt-lg-0" id="navbarMain">
@@ -70,9 +65,13 @@
           <a class="nav-link fw-bold" href="index_EN.html">EN</a>
         </li>
 
-        <!-- LINKEDIN ICON -->
+        <!-- LINKEDIN -->
         <li class="nav-item d-flex align-items-center">
-          <a class="nav-link p-0" href="https://www.linkedin.com/in/exequiel-sambucetti/" target="_blank" aria-label="LinkedIn">
+          <a
+            class="nav-link p-0"
+            href="https://www.linkedin.com/in/exequiel-sambucetti/"
+            target="_blank"
+            aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
                  style="height:28px; width:28px; fill:white; display:block;">
@@ -95,14 +94,16 @@
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         if (navbarCollapse.classList.contains('show')) {
-          const collapse = bootstrap.Collapse.getInstance(navbarCollapse)
-            || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+          const collapse =
+            bootstrap.Collapse.getInstance(navbarCollapse) ||
+            new bootstrap.Collapse(navbarCollapse, { toggle: false });
           collapse.hide();
         }
       });
     });
   });
 </script>
+
 
 
 
