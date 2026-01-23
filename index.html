@@ -28,26 +28,31 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 navJenny">
   <div class="container-fluid px-4">
 
-    <!-- LOGO -->
-    <a class="navbar-brand" href="index.html#hero">
-      <img src="media/Logo.png" alt="Logo" class="Logo">
-    </a>
+    <!-- HEADER MOBILE FLEX -->
+    <div class="d-flex w-100 align-items-center justify-content-between">
 
-    <!-- HAMBURGER -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarMain"
-      aria-controls="navbarMain"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- LOGO -->
+      <a class="navbar-brand m-0" href="index.html#hero">
+        <img src="media/Logo.png" alt="Logo" class="Logo" style="max-height:40px;">
+      </a>
+
+      <!-- HAMBURGER -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMain"
+        aria-controls="navbarMain"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
 
     <!-- MENU -->
-    <div class="collapse navbar-collapse fade" id="navbarMain">
-      <ul class="navbar-nav ms-auto text-center text-lg-end align-items-center gap-3">
+    <div class="collapse navbar-collapse fade text-center mt-3 mt-lg-0" id="navbarMain">
+      <ul class="navbar-nav ms-lg-auto align-items-center gap-3 w-100 w-lg-auto">
 
         <!-- Inicio -->
         <li class="nav-item">
@@ -64,7 +69,7 @@
           <a class="nav-link fw-bold" href="index_EN.html">EN</a>
         </li>
 
-        <!-- LinkedIn DESKTOP (icono) -->
+        <!-- LinkedIn DESKTOP -->
         <li class="nav-item d-none d-lg-flex align-items-center ms-lg-3">
           <a class="nav-link p-0" href="https://www.linkedin.com/in/exequiel-sambucetti/" target="_blank" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +80,7 @@
           </a>
         </li>
 
-        <!-- LinkedIn MOBILE (texto) -->
+        <!-- LinkedIn MOBILE -->
         <li class="nav-item d-lg-none">
           <a class="nav-link fw-bold" href="https://www.linkedin.com/in/exequiel-sambucetti/" target="_blank">
             LinkedIn
@@ -87,7 +92,7 @@
   </div>
 </nav>
 
-<!-- JS: cerrar menú al click + timing suave -->
+<!-- JS: cerrar menú al click -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('#navbarMain .nav-link');
