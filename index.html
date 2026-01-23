@@ -26,21 +26,40 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('#navbarMain a');
     const navbarCollapse = document.getElementById('navbarMain');
+    const toggler = document.querySelector('.navbar-toggler');
 
-    navLinks.forEach(link => {
+    if (!navbarCollapse || !toggler) return;
+
+    const getCollapseInstance = () =>
+      bootstrap.Collapse.getInstance(navbarCollapse) ||
+      new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+    /* CERRAR AL CLICK EN LINK */
+    navbarCollapse.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         if (navbarCollapse.classList.contains('show')) {
-          const collapse =
-            bootstrap.Collapse.getInstance(navbarCollapse) ||
-            new bootstrap.Collapse(navbarCollapse, { toggle: false });
-          collapse.hide();
+          getCollapseInstance().hide();
         }
       });
     });
+
+    /* CERRAR AL CLICK FUERA */
+    document.addEventListener('click', (e) => {
+      const clickedInsideMenu = navbarCollapse.contains(e.target);
+      const clickedToggler = toggler.contains(e.target);
+
+      if (
+        navbarCollapse.classList.contains('show') &&
+        !clickedInsideMenu &&
+        !clickedToggler
+      ) {
+        getCollapseInstance().hide();
+      }
+    });
   });
 </script>
+
 
 
     
@@ -87,7 +106,7 @@
         <a href="https://www.linkedin.com/in/exequiel-sambucetti/"
            target="_blank"
            aria-label="LinkedIn"
-           style="display:block; position:relative; top:-10px;">
+           style="display:block; position:relative; top:-40px;">
           <svg xmlns="http://www.w3.org/2000/svg"
                viewBox="0 0 24 24"
                style="width:26px; height:26px; fill:white; display:block;">
