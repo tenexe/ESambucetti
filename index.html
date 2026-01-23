@@ -26,75 +26,65 @@
 
 
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid px-4 py-3">
 
-    <!-- Logo -->
+    <!-- LOGO IZQUIERDA -->
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img
-        src="assets/img/logo.svg"
-        alt="ESambucetti"
-        height="32"
-        class="d-inline-block align-text-top"
-      >
+      <img src="media/Logo.png" alt="Logo" style="height:40px;">
     </a>
 
-    <!-- Hamburger -->
+    <!-- HAMBURGUESA MOBILE -->
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarMain"
-      aria-controls="navbarMain"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu -->
-    <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarMain">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+    <!-- CONTENIDO -->
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
 
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
+      <ul class="navbar-nav align-items-lg-center text-center pt-4 pt-lg-0">
+
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="about.html">About</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Sobre mí</a>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="work.html">Work</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="work.html">Trabajos</a>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contacto</a>
-        </li>
-
-        <!-- LinkedIn -->
-        <li class="nav-item ms-lg-3">
+        <!-- LINKEDIN SIEMPRE ICONO -->
+        <li class="nav-item px-lg-3 pt-3 pt-lg-0">
           <a
-            class="nav-link d-flex align-items-center"
+            class="nav-link"
             href="https://www.linkedin.com/"
             target="_blank"
-            rel="noopener"
             aria-label="LinkedIn"
           >
             <img
-              src="assets/img/linkedin.svg"
+              src="media/linkedin.svg"
               alt="LinkedIn"
-              height="18"
+              style="height:24px;"
             >
           </a>
         </li>
 
       </ul>
     </div>
-
   </div>
 </nav>
+
 
 
 <!-- CERRAR MENÚ MOBILE AL CLICK -->
