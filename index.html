@@ -28,20 +28,19 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 navJenny">
   <div class="container-fluid px-4">
 
-    <!-- HEADER MOBILE FLEX -->
+    <!-- HEADER MOBILE -->
     <div class="d-flex w-100 align-items-center justify-content-between">
 
       <!-- LOGO -->
-      <a class="navbar-brand m-0" href="index.html#hero">
+      <a class="navbar-brand m-0" href="#hero">
         <img 
-          src="media/Logo.png" 
+          src="media/Logo.png"
           alt="Logo"
-          class="Logo"
-          style="height:48px; width:auto;"
+          style="height:54px; width:auto;"
         >
       </a>
 
-      <!-- HAMBURGER -->
+      <!-- HAMBURGUESA -->
       <button
         class="navbar-toggler"
         type="button"
@@ -55,9 +54,9 @@
 
     </div>
 
-    <!-- MENU -->
-    <div class="collapse navbar-collapse fade text-center mt-3 mt-lg-0" id="navbarMain">
-      <ul class="navbar-nav ms-lg-auto align-items-center gap-3 w-100 w-lg-auto">
+    <!-- MENÚ -->
+    <div class="collapse navbar-collapse fade mt-3 mt-lg-0" id="navbarMain">
+      <ul class="navbar-nav ms-lg-auto align-items-center text-center gap-3 w-100 w-lg-auto">
 
         <li class="nav-item">
           <a class="nav-link fw-bold" href="#hero">Inicio</a>
@@ -71,21 +70,14 @@
           <a class="nav-link fw-bold" href="index_EN.html">EN</a>
         </li>
 
-        <!-- LinkedIn DESKTOP -->
-        <li class="nav-item d-none d-lg-flex align-items-center ms-lg-3">
+        <!-- LINKEDIN ICON (DESKTOP + MOBILE) -->
+        <li class="nav-item d-flex align-items-center">
           <a class="nav-link p-0" href="https://www.linkedin.com/in/exequiel-sambucetti/" target="_blank" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
-                 style="height:26px; width:26px; fill:white; display:block;">
+                 style="height:28px; width:28px; fill:white; display:block;">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.266 2.37 4.266 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM6.814 20.452H3.861V9h2.953v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
-          </a>
-        </li>
-
-        <!-- LinkedIn MOBILE -->
-        <li class="nav-item d-lg-none">
-          <a class="nav-link fw-bold" href="https://www.linkedin.com/in/exequiel-sambucetti/" target="_blank">
-            LinkedIn
           </a>
         </li>
 
@@ -94,10 +86,10 @@
   </div>
 </nav>
 
-<!-- JS: cerrar menú al click -->
+<!-- CERRAR MENÚ MOBILE AL CLICK -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('#navbarMain .nav-link');
+    const navLinks = document.querySelectorAll('#navbarMain a');
     const navbarCollapse = document.getElementById('navbarMain');
 
     navLinks.forEach(link => {
@@ -111,6 +103,7 @@
     });
   });
 </script>
+
 
 
 
