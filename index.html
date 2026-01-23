@@ -263,35 +263,43 @@
 
     <!-- Navbar comportamiento JS -->
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const navbar = document.getElementById('navbarMain');
-      const toggler = document.querySelector('.navbar-toggler');
+document.addEventListener('DOMContentLoaded', function () {
 
-      if (!navbar || !toggler) return;
+  const navbar = document.getElementById('navbarMobile');
+  const toggler = document.querySelector('.navbar-toggler');
 
-      const bsCollapse = new bootstrap.Collapse(navbar, {
-        toggle: false
-      });
+  if (!navbar || !toggler || !window.bootstrap) return;
 
-      navbar.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          if (navbar.classList.contains('show')) {
-            bsCollapse.hide();
-          }
-        });
-      });
+  const collapse = new bootstrap.Collapse(navbar, {
+    toggle: false
+  });
 
-      document.addEventListener('click', (e) => {
-        if (
-          navbar.classList.contains('show') &&
-          !navbar.contains(e.target) &&
-          !toggler.contains(e.target)
-        ) {
-          bsCollapse.hide();
-        }
-      });
+  /* CERRAR AL CLICK EN LINK */
+  navbar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (navbar.classList.contains('show')) {
+        collapse.hide();
+      }
     });
-  </script>
+  });
+
+  /* CERRAR AL CLICK FUERA */
+  document.addEventListener('click', (e) => {
+    const clickedInsideMenu = navbar.contains(e.target);
+    const clickedToggler = toggler.contains(e.target);
+
+    if (
+      navbar.classList.contains('show') &&
+      !clickedInsideMenu &&
+      !clickedToggler
+    ) {
+      collapse.hide();
+    }
+  });
+
+});
+</script>
+
 
 </body>
 </html>
