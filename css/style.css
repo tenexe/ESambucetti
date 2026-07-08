@@ -698,19 +698,17 @@ h6 {
 
     background:linear-gradient(
         180deg,
-        #0a0a0a 0%,
-        #3b3b3b 100%
+        #050505 0%,
+        #444 100%
     );
 
-    padding:70px 50px 60px;
-
-    border-radius:0;
+    padding:60px 50px;
 
 }
 
 .featured-title{
 
-    margin-bottom:55px;
+    margin-bottom:50px;
 
 }
 
@@ -720,13 +718,13 @@ h6 {
 
     margin-bottom:10px;
 
-    text-transform:uppercase;
+    font-size:.75rem;
 
     letter-spacing:.28em;
 
-    font-size:.75rem;
+    text-transform:uppercase;
 
-    color:#8b8b8b;
+    color:#8f8f8f;
 
 }
 
@@ -736,25 +734,24 @@ h6 {
 
     color:#fff;
 
-    font-size:2.4rem;
-
     font-weight:300;
+
+    font-size:2.3rem;
 
 }
 
 .featured-title h3{
 
-    margin-top:6px;
+    margin-top:8px;
 
-    color:#bcbcbc;
+    color:#c8c8c8;
 
     font-size:1rem;
 
     font-weight:300;
 
-    letter-spacing:.08em;
-
 }
+
 
 
 /* ---------- VIDEO HORIZONTAL ---------- */
@@ -763,11 +760,9 @@ h6 {
 
     overflow:hidden;
 
-    background:#000;
-
     border-radius:8px;
 
-    box-shadow:0 12px 35px rgba(0,0,0,.35);
+    background:#000;
 
 }
 
@@ -782,44 +777,32 @@ h6 {
 }
 
 
+
 /* ---------- TEXTO ---------- */
 
 .featured-description{
 
-    margin-top:35px;
-
-    max-width:100%;
-
-}
-
-.featured-description h4{
-
-    display:none;
+    margin-top:32px;
 
 }
 
 .featured-description p{
 
-    color:#d5d5d5;
+    color:#d2d2d2;
 
-    font-size:1rem;
-
-    line-height:1.85;
+    line-height:1.8;
 
     margin-bottom:18px;
 
 }
 
 
+
 /* ---------- VIDEO VERTICAL ---------- */
 
 .featured-video-vertical{
 
-    display:flex;
-
-    justify-content:flex-end;
-
-    align-items:flex-start;
+    width:100%;
 
 }
 
@@ -827,17 +810,13 @@ h6 {
 
     width:100%;
 
-    max-width:340px;
-
-    aspect-ratio:9 / 16;
+    aspect-ratio:9/16;
 
     overflow:hidden;
 
+    border-radius:10px;
+
     background:#000;
-
-    border-radius:12px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.40);
 
 }
 
@@ -852,27 +831,20 @@ h6 {
 }
 
 
+
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width:991px){
 
     .featured-panel{
 
-        padding:45px 35px;
+        padding:45px 30px;
 
     }
 
     .featured-video-vertical{
 
-        justify-content:center;
-
-        margin-top:15px;
-
-    }
-
-    .featured-short{
-
-        max-width:360px;
+        margin-top:40px;
 
     }
 
@@ -886,23 +858,7 @@ h6 {
 
     }
 
-    .featured-title{
-
-        margin-bottom:35px;
-
-    }
-
-    .featured-title h2{
-
-        font-size:2rem;
-
-    }
-
 }
-
-
-
-
 
 
 
