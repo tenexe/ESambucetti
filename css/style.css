@@ -681,4 +681,261 @@ h6 {
   box-sizing: border-box;
 }
 
+
+
+
+/* ==========================================================
+   FEATURED PROJECT
+========================================================== */
+
+.featured-project{
+
+    margin:120px 0;
+
+}
+
+.featured-panel{
+
+    background:linear-gradient(
+        180deg,
+        #0f0f0f 0%,
+        #1a1a1a 100%
+    );
+
+    padding:70px;
+
+    border-radius:4px;
+
+}
+
+.featured-title{
+
+    margin-bottom:55px;
+
+}
+
+.featured-title span{
+
+    display:block;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    font-size:.85rem;
+
+    color:#9a9a9a;
+
+    margin-bottom:8px;
+
+}
+
+.featured-title h2{
+
+    color:#fff;
+
+    margin-bottom:6px;
+
+}
+
+.featured-title h3{
+
+    color:#c7c7c7;
+
+    font-size:1rem;
+
+    font-weight:300;
+
+    letter-spacing:.08em;
+
+}
+
+
+/* ---------- VIDEO HORIZONTAL ---------- */
+
+.featured-video-horizontal{
+
+    overflow:hidden;
+
+    border-radius:6px;
+
+    background:#000;
+
+}
+
+.featured-video-horizontal iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+
+/* ---------- TEXTO ---------- */
+
+.featured-description{
+
+    margin-top:38px;
+
+    max-width:90%;
+
+}
+
+.featured-description h4{
+
+    color:white;
+
+    margin-bottom:18px;
+
+}
+
+.featured-description p{
+
+    color:#d3d3d3;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+
+/* ---------- VIDEO VERTICAL ---------- */
+
+.featured-video-vertical{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+
+/*
+    El truco está acá.
+    El contenedor tiene proporción 9:16.
+*/
+
+.featured-short{
+
+    width:100%;
+
+    max-width:310px;
+
+    aspect-ratio:9 / 16;
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+    background:#000;
+
+}
+
+
+/*
+    El iframe ocupa todo el contenedor.
+*/
+
+.featured-short iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:991px){
+
+    .featured-panel{
+
+        padding:50px 40px;
+
+    }
+
+    .featured-description{
+
+        max-width:100%;
+
+    }
+
+    .featured-video-vertical{
+
+        margin-top:10px;
+
+    }
+
+    .featured-short{
+
+        max-width:360px;
+
+        margin:auto;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .featured-project{
+
+        margin:80px 0;
+
+    }
+
+    .featured-panel{
+
+        padding:35px 25px;
+
+    }
+
+    .featured-title{
+
+        margin-bottom:35px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
