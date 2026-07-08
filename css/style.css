@@ -683,14 +683,14 @@ h6 {
 
 
 
-
-/* ==========================================================
+/* =======================================================
    FEATURED PROJECT
-========================================================== */
+======================================================= */
 
 .featured-project{
 
-    margin:120px 0;
+    margin:0;
+    padding:0;
 
 }
 
@@ -698,13 +698,13 @@ h6 {
 
     background:linear-gradient(
         180deg,
-        #0f0f0f 0%,
-        #1a1a1a 100%
+        #0a0a0a 0%,
+        #3b3b3b 100%
     );
 
-    padding:70px;
+    padding:70px 50px 60px;
 
-    border-radius:4px;
+    border-radius:0;
 
 }
 
@@ -718,29 +718,35 @@ h6 {
 
     display:block;
 
+    margin-bottom:10px;
+
     text-transform:uppercase;
 
-    letter-spacing:.18em;
+    letter-spacing:.28em;
 
-    font-size:.85rem;
+    font-size:.75rem;
 
-    color:#9a9a9a;
-
-    margin-bottom:8px;
+    color:#8b8b8b;
 
 }
 
 .featured-title h2{
 
+    margin:0;
+
     color:#fff;
 
-    margin-bottom:6px;
+    font-size:2.4rem;
+
+    font-weight:300;
 
 }
 
 .featured-title h3{
 
-    color:#c7c7c7;
+    margin-top:6px;
+
+    color:#bcbcbc;
 
     font-size:1rem;
 
@@ -757,9 +763,11 @@ h6 {
 
     overflow:hidden;
 
-    border-radius:6px;
-
     background:#000;
+
+    border-radius:8px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
 
 }
 
@@ -778,25 +786,25 @@ h6 {
 
 .featured-description{
 
-    margin-top:38px;
+    margin-top:35px;
 
-    max-width:90%;
+    max-width:100%;
 
 }
 
 .featured-description h4{
 
-    color:white;
-
-    margin-bottom:18px;
+    display:none;
 
 }
 
 .featured-description p{
 
-    color:#d3d3d3;
+    color:#d5d5d5;
 
-    line-height:1.8;
+    font-size:1rem;
+
+    line-height:1.85;
 
     margin-bottom:18px;
 
@@ -809,38 +817,29 @@ h6 {
 
     display:flex;
 
-    justify-content:center;
+    justify-content:flex-end;
 
     align-items:flex-start;
 
 }
 
-
-/*
-    El truco está acá.
-    El contenedor tiene proporción 9:16.
-*/
-
 .featured-short{
 
     width:100%;
 
-    max-width:310px;
+    max-width:340px;
 
     aspect-ratio:9 / 16;
 
     overflow:hidden;
 
-    border-radius:10px;
-
     background:#000;
 
+    border-radius:12px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.40);
+
 }
-
-
-/*
-    El iframe ocupa todo el contenedor.
-*/
 
 .featured-short iframe{
 
@@ -859,19 +858,15 @@ h6 {
 
     .featured-panel{
 
-        padding:50px 40px;
-
-    }
-
-    .featured-description{
-
-        max-width:100%;
+        padding:45px 35px;
 
     }
 
     .featured-video-vertical{
 
-        margin-top:10px;
+        justify-content:center;
+
+        margin-top:15px;
 
     }
 
@@ -879,23 +874,15 @@ h6 {
 
         max-width:360px;
 
-        margin:auto;
-
     }
 
 }
 
 @media (max-width:768px){
 
-    .featured-project{
-
-        margin:80px 0;
-
-    }
-
     .featured-panel{
 
-        padding:35px 25px;
+        padding:35px 20px;
 
     }
 
@@ -905,8 +892,13 @@ h6 {
 
     }
 
-}
+    .featured-title h2{
 
+        font-size:2rem;
+
+    }
+
+}
 
 
 
