@@ -687,6 +687,211 @@ h6 {
 FEATURED PROJECT
 ======================================================= */
 
+.featured-project{
+    margin:0;
+    padding:0;
+}
+
+.featured-panel{
+
+    background:linear-gradient(
+        180deg,
+        #0b0b0b 0%,
+        #3a3a3a 100%
+    );
+
+    padding:65px 40px 55px;
+
+}
+
+.featured-title{
+
+    margin-bottom:38px;
+
+}
+
+.featured-title span{
+
+    display:block;
+    margin-bottom:12px;
+
+    text-transform:uppercase;
+    letter-spacing:.30em;
+
+    font-size:.75rem;
+
+    color:#8c8c8c;
+
+}
+
+.featured-title h2{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:3rem;
+    font-weight:300;
+
+}
+
+.featured-title h3{
+
+    margin-top:8px;
+
+    color:#bdbdbd;
+
+    font-size:1rem;
+    font-weight:300;
+
+    letter-spacing:.08em;
+
+}
+
+/* ---------- VIDEOS ---------- */
+
+.featured-video-horizontal{
+
+    width:100%;
+
+    aspect-ratio:16 / 9;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+    background:#000;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.featured-video-horizontal iframe{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+.featured-video-vertical{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:flex-start;
+
+}
+
+.featured-short{
+
+    width:min(100%,340px);
+
+    margin-left:auto;
+
+    aspect-ratio:9 / 16;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+    background:#000;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.featured-short iframe{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+/* ---------- COPY ---------- */
+
+.featured-description{
+
+    max-width:900px;
+
+    margin:45px auto 0;
+
+    text-align:center;
+
+}
+
+.featured-description p{
+
+    margin-bottom:22px;
+
+    color:#d4d4d4;
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:991px){
+
+    .featured-panel{
+
+        padding:45px 30px;
+
+    }
+
+    .featured-video-vertical{
+
+        justify-content:center;
+
+        margin-top:35px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .featured-panel{
+
+        padding:35px 20px;
+
+    }
+
+    .featured-title h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .featured-description{
+
+        text-align:left;
+
+    }
+
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
