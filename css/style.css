@@ -818,8 +818,19 @@ FEATURED PROJECT
 
         margin-inline:auto;
 
+      justify-content:flex-start;
+
+     align-items:flex-start;
+
+
 }
 
+      .featured-short{
+
+        margin-inline:auto;
+
+}
+        
 }
 
 .featured-short iframe{
