@@ -792,33 +792,22 @@ FEATURED PROJECT
 
 }
 
-.featured-short{
-
-    width:min(100%,380px);
-
-    margin-left:auto;
-
-    aspect-ratio:9 / 16;
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:10px;
-
-    background:#000;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-
+.featured-short{ width:min(100%,340px); 
+                margin-left:auto; 
+                aspect-ratio:9 / 16; 
+                position:relative; 
+                overflow:hidden; 
+                border-radius:10px; 
+                background:#000; 
+                box-shadow:0 15px 40px rgba(0,0,0,.35);
+               
 }
 
 @media (max-width:991.98px){
 
-    .featured-short{
+    .featured-video-vertical{
 
         margin-inline:auto;
-
-    }
 
 }
 
