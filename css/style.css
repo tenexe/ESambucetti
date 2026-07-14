@@ -844,7 +844,7 @@ border-bottom-right-radius:50px;
 
 .featured-description{
 
-    max-width:820px;
+    max-width:900px;
 
     margin:45px auto 0;
 
@@ -903,6 +903,16 @@ border-bottom-right-radius:50px;
     .featured-description{
 
         text-align:left;
+
+    }
+
+}
+
+@media (min-width:992px){
+
+    .featured-description{
+
+        padding-inline:20px;
 
     }
 
